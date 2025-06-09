@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap-5.3.6-dist/bootstrap-5.3.6-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Tudo sobre flauta</title>
+</head>
+
+<header>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Tudo o que você precisa saber sobre flautas
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center pe-5">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="inicio.html">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Flauta Doce</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Flauta Transversal
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="flauta-t.html">Flauta Transversal v.1</a></li>
+                                <li><a class="dropdown-item" href="flauta-t2.html">Flauta Transversal v.2</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <img id="especial" src="img/music_note_50dp_000000_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+</header>
+
+<body>
+    <h1>
+        <span class="container-title">Conheça a flauta</span>
+    </h1>
+
+    <p>A flauta é um instrumento pertencente à família das madeiras. Sendo um instrumento musical de sopro, possui
+        estética produzida com vários tipos de madeira, ela possui um formato de tubo com alguns buracos em sua
+        estrutura. Ela funciona quando o vento produzido no sopro atravessa seu tubo e vibra com a passagem do ar
+        através dos pequenos furos que ela possui.</p>
+
+    <h2>A flauta e o ar</h2>
+    <p>Por ser um instrumento cuja força é gerada por meio do sopro, o som produzido é gerado através de colunas de ar.
+        Existem ondas que se propagam mediante a pressão envolvida no ar. Para se obter sons mais agudos, por exemplo, é
+        necessário aumentar a potência de ar que entra dentro do tubo, pois quanto menor o comprimento do ar maior a
+        frequência.</p>
+    <p>Por isso, se faz necessário tapar os buracos com os dedos, para se obter o som bem mais grave, basta deixar os
+        buracos abertos, assim o ar dentro do tubo não vai percorrer todo o caminho e vai sair através das primeiras
+        entradas.</p>
+    <p>Sua história remete ao período da idade da Pedra Polida, onde o homem usava objetos com formatos de tubo para
+        produzir sons semelhantes ao canto dos pássaros. As primeiras flautas se assemelhavam a apitos, no qual foram
+        evoluindo, ganhando tamanho e furos adicionais que modificavam o som. A flauta deu origem a outros instrumentos
+        bastante conhecidos hoje como o Oboé, o fagote, a flauta doce, flauta transversal, entre outros.</p>
+
+    <h2>Tipos de flauta</h2>
+    <p>Existem vários tipos de flautas desenvolvidos com o passar do tempo, citamos aqui:</p>
+    <p>Flauta doce: Produz um som melodioso e confortante, produzida através da madeira e bisel. Possui alguns tipos de
+        afinações como o:</p>
+    <ul>
+        <li>Soprano: Produz sons agudos;</li>
+        <li>Sopranino: Produz sons ainda mais agudos;</li>
+        <li>Tenor: Sons médios e graves;</li>
+        <li>Baixo: Sons graves e gravíssimos;</li>
+        <li>Contra-baixo: Sons gravíssimos.</li>
+    </ul>
+
+    <h2>Estrutura da flauta</h2>
+    <p>A flauta possui em sua estrutura uma cabeça ou bocal, local onde é produzido o ar que causa o som na flauta.
+        Apoiamos a boca nesse item e sopramos. Possui o corpo, onde ficam localizados os furos que provocam a melodia na
+        flauta, são os buracos que apertamos para que a melodia seja composta. E por fim, temos o pé, local onde ficam
+        localizados os buracos que produzem as notas mais graves.</p>
+    <p>Os músicos que possuem a flauta em seu repertório de instrumentos sabem que para um bom som, é necessária uma
+        postura de acordo. A coluna é interessante manter sempre reta, para que não ocorram lesões, nem a sonoridade
+        fique prejudicada. Os braços devem se manter um pouco afastados do tórax e da cabeça. A cabeça deve estar bem
+        leve, os ombros e antebraços estruturados de maneira “solta” e tranquila e, de preferência, na posição sentado.
+    </p>
+</body>
+<script src="js/main.js"></script>
+
+<script src="bootstrap-5.3.6-dist/bootstrap-5.3.6-dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    document.addEventListener('contextmenu', event => event.preventDefault());
+
+    document.addEventListener('keydown', function (e) {
+        if (
+            e.key === 'F12' ||
+            (e.ctrlKey && e.shiftKey && ['I', 'J', 'C'].includes(e.key.toUpperCase()))
+        ) {
+            e.preventDefault();
+            window.location.href = "http://127.0.0.1:5500/404.html"; // ou outra ação
+        }
+    });
+
+
+</script>
+
+</html>
