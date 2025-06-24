@@ -136,6 +136,27 @@ a {
     scale: 1.5;
 }
 
+.bicon {
+    width: 20px;
+    scale: 1;
+    padding-bottom: 0px;
+}
+
+.btn {
+    background-color: #D1BC96;
+    color: #4C0A0A;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #d2c5ad;
+}
+
+.bg {
+    background-color: #4C0A0A;
+}
+
+
 @media (min-width: 992px) {
     .navbar-expand-lg .offcanvas .offcanvas-body {
         display: flex;
