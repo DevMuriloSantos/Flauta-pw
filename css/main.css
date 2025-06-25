@@ -156,6 +156,10 @@ a {
     background-color: #4C0A0A;
 }
 
+.carousel-caption {
+    color: #c92222;
+}
+
 
 @media (min-width: 992px) {
     .navbar-expand-lg .offcanvas .offcanvas-body {
