@@ -214,14 +214,14 @@ a {
     }
 
     .carousel-control-next-icon {
-        background-image: url('/Flauta-pw/img/swipe_right_150dp_CACBCC_FILL0_wght400_GRAD0_opsz48.svg') !important;
+        background-image: url('/Flauta-pw/img/swipe_right_150dp_CACBCC_FILL0_wght400_GRAD0_opsz48.svg');
         animation: rotatenext 1.75s infinite;
         scale: 1.3;
         display: block;
     }
 
     .carousel-control-prev-icon {
-        background-image: url('/Flauta-pw/img/swipe_left_150dp_CACBCC_FILL0_wght400_GRAD0_opsz48.svg') !important;
+        background-image: url('/Flauta-pw/img/swipe_left_150dp_CACBCC_FILL0_wght400_GRAD0_opsz48.svg');
         animation: rotateprev 1.75s infinite;
         scale: 1.3;
         display: block;
