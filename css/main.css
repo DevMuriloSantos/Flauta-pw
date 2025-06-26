@@ -230,7 +230,7 @@ a {
 
 @keyframes scale {
     0% {
-        transform: scale(1.25);
+        transform: scale(1.26);
     }
 
     50% {
@@ -238,7 +238,7 @@ a {
     }
 
     100% {
-        transform: scale(1.25);
+        transform: scale(1.26);
     }
 }
 
