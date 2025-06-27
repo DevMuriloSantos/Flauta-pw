@@ -51,11 +51,23 @@
                                 <a class="nav-link" href="pifano.html">Flauta Pífano</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="glossario.html">Glossário</a>
-                            </li>
-                            <li class="nav-item">
                                 <a class="nav-link" aria-current="page" href="p-flautistas.html">Principais
                                     flautistas</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Partitura
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="partitura.html">O que é partitua ?</a></li>
+                                    <li><a class="dropdown-item" href="partitura-v2.html">Como ler uma partitura ?</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="partitura-v3.html">Armadura de clave</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="glossario.html">Glossário</a>
                             </li>
                         </ul>
                         <img class="i-musica especial min"
@@ -100,7 +112,7 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="img/Edson-Beltrami.png" class="d-block w-100" alt="">
+                    <img src="img/Edson-Beltrami.png" class="d-block w-100 h-100" alt="">
                     <div class="carousel-caption">
                         <h5>Edson Beltrami</h5>
                         <p>1965 - ....</p>
@@ -178,5 +190,19 @@
 
 </body>
 <script src="bootstrap-5.3.6-dist/bootstrap-5.3.6-dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    document.addEventListener('contextmenu', event => event.preventDefault());
+
+    document.addEventListener('keydown', function (e) {
+        if (
+            e.key === 'F12' ||
+            (e.ctrlKey && e.shiftKey && ['I', 'J', 'C'].includes(e.key.toUpperCase()))
+        ) {
+            e.preventDefault();
+            window.location.href = "http://127.0.0.1:5500/Flauta-pw/404.html"; // ou outra ação
+        }
+    });
+</script>
 
 </html>

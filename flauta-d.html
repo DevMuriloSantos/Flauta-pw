@@ -51,10 +51,23 @@
                                 <a class="nav-link" href="pifano.html">Flauta Pífano</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="glossario.html">Glossário</a>
+                                <a class="nav-link" aria-current="page" href="p-flautistas.html">Principais
+                                    flautistas</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Partitura
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="partitura.html">O que é partitua ?</a></li>
+                                    <li><a class="dropdown-item" href="partitura-v2.html">Como ler uma partitura ?</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="partitura-v3.html">Armadura de clave</a></li>
+                                </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="p-flautistas.html">Principais flautistas</a>
+                                <a class="nav-link" aria-current="page" href="glossario.html">Glossário</a>
                             </li>
                         </ul>
                         <img class="i-musica especial min"
@@ -107,7 +120,7 @@
                     <div class="accordion-body">A flauta doce soprano é a mais comum e menor do tipo. Tem um som doce e
                         brilhante e é frequentemente usado em música solo e de conjunto.
 
-                        <img src="img/flauta-soprano.png" alt="">
+                        <img class="accf" src="img/flauta-soprano.png" alt="">
                     </div>
                 </div>
             </div>
@@ -122,7 +135,7 @@
                     <div class="accordion-body">A flauta doce contralto é um pouco maior que a flauta doce soprano e tem
                         um som mais rico e mais profundo. É frequentemente usado em música de conjunto e como
                         acompanhamento.
-                        <img src="img/flauta-contralto.png" alt="">
+                        <img class="accf" src="img/flauta-contralto.png" alt="">
                     </div>
                 </div>
             </div>
@@ -135,11 +148,11 @@
                 </h2>
                 <div id="flush-collapseThree" class="accordion-collapse collapse"
                     data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">A flauta doce tenor é ainda maior que a flauta doce contralto e tem um
+                    <div class="accordion-body">A flauta doce tenor é maior que a flauta doce contralto e tem um
                         som mais robusto e masculino. É frequentemente usado em música de conjunto e como instrumento
                         solo.
 
-                        <img src="img/flauta-tenor.png" alt="">
+                        <img class="accf" src="img/flauta-tenor.png" alt="">
                     </div>
                 </div>
             </div>
@@ -155,7 +168,7 @@
                     <div class="accordion-body">A flauta doce baixo é a maior do tipo flauta doce comum e tem um som
                         profundo e ressonante. É frequentemente usado em música de conjunto e como instrumento solo.
 
-                        <img src="img/flauta-baixo.png" alt="">
+                        <img class="accf" src="img/flauta-baixo.png" alt="">
                     </div>
                 </div>
             </div>
@@ -175,5 +188,19 @@
     </main>
 </body>
 <script src="bootstrap-5.3.6-dist/bootstrap-5.3.6-dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    document.addEventListener('contextmenu', event => event.preventDefault());
+
+    document.addEventListener('keydown', function (e) {
+        if (
+            e.key === 'F12' ||
+            (e.ctrlKey && e.shiftKey && ['I', 'J', 'C'].includes(e.key.toUpperCase()))
+        ) {
+            e.preventDefault();
+            window.location.href = "http://127.0.0.1:5500/Flauta-pw/404.html"; // ou outra ação
+        }
+    });
+</script>
 
 </html>

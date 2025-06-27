@@ -6,6 +6,7 @@
 
 body {
     margin-top: 80px;
+    background-color: #f3efe9;
 }
 
 main {
@@ -14,7 +15,6 @@ main {
     padding: 10px;
     margin: auto;
     width: 750px;
-    border-radius: 8px;
 }
 
 main>img {
@@ -168,6 +168,31 @@ a {
     filter: contrast(0.75);
 }
 
+.img-6, .img-11, .img-13, .img-16 {
+    width: 40%;
+}
+
+.img-12, .img-14, .img-17, .img-18, .img-19 {
+    width: 70%;
+}
+
+.card-header {
+    background-color: #4C0A0A;
+}
+
+.card-header-tabs {
+    display: flex;
+    justify-content: center;
+}
+
+.notasm {
+    width: 65%;
+}
+
+#p2, #p3, #p4, #p5, #p6, #p7 {
+    display: none;
+}
+
 @media (min-width: 992px) {
     .navbar-expand-lg .offcanvas .offcanvas-body {
         display: flex;
@@ -190,6 +215,14 @@ a {
         display: none;
     }
 
+    .test {
+        display: none;
+    }
+
+    .accf {
+        width: 80%;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -199,6 +232,10 @@ a {
 
     img {
         width: 100%;
+    }
+
+    .acc {
+        width: 34%;
     }
 
     .warning {
