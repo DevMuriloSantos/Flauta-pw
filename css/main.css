@@ -189,6 +189,18 @@ a {
     width: 65%;
 }
 
+.btna {
+    text-decoration: none;
+}
+
+.btna-active {
+    color: #4C0A0A;
+}
+
+.btn {
+    margin: 4px;
+}
+
 #p2, #p3, #p4, #p5, #p6, #p7 {
     display: none;
 }

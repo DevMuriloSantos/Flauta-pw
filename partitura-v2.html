@@ -127,7 +127,11 @@
 
         <p>Obs: Apesar de não existirem regras, é sempre conveniente escrever da maneira mais “simples” possível, afinal a partitura existe para ajudar os músicos, não para complicar a vida deles.</p>
 
-        <!--button group-->
+        <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+            <button type="button" class="btn"><a class="btna" href="partitura.html">O que é partitura</a></button>
+            <button type="button" class="btn"><a class="btna btna-active" href="partitura-v2.html">Como ler uma partitura</a></button>
+            <button type="button" class="btn"><a class="btna" href="partitura-v3.html">Armadura de clave</a></button>
+        </div>
     </main>
 </body>
 <script src="bootstrap-5.3.6-dist/bootstrap-5.3.6-dist/js/bootstrap.bundle.min.js"></script>
@@ -137,7 +141,7 @@
 
     document.addEventListener('keydown', function (e) {
         if (
-            e.key === 'F12' ||
+            e.key === 'F1' ||
             (e.ctrlKey && e.shiftKey && ['I', 'J', 'C'].includes(e.key.toUpperCase()))
         ) {
             e.preventDefault();
